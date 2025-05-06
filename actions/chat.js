@@ -25,7 +25,7 @@ export async function ai_response(response) {
 `;
 
 const tipResult = await model.generateContent(therapistPrompt);
-console.log(tipResult);
+
 
 const improvementTip = tipResult.response.text().trim();
 return improvementTip

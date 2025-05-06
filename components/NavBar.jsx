@@ -15,8 +15,15 @@ const Navbar = () => {
     <header className="container mx-auto max-w-none">
       <nav className="flex justify-between items-center text-white p-7">
         <Link href={"/"}>
-          <div className="text-3xl font-bold">
-            MannMitra
+          <div className="text-3xl flex  font-bold">
+            <span className="text-[#66a1ff]">
+
+            Mann
+            </span>
+            <span className="text-[#10e0a5df]">
+
+            Mitra
+            </span>
           </div>
         </Link>
         <div className="">
