@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="dark p-5"> {/* Apply dark mode to the main div */}
       <section className="mb-20">
-        <div className="text-5xl sm:text-2xl md:text-3xl font-bold flex gap-2  items-center text-white text-center justify-center">
+        <div className="text-5xl lg:text-7xl md:text-6xl font-bold flex gap-2  items-center text-white text-center justify-center">
           <span className="text-[#10e0a5df] text-8xl mr-3">MannMitra is</span>
           <RotatingText
             texts={[
@@ -36,15 +36,15 @@ export default function Home() {
             rotationInterval={4000}
           />
         </div>
-        <p className="text-center text-xl sm:text-sm md:text-2xl font-bold text-muted-foreground mt-4">
+        <p className="text-center text-xl sm:text-lg lg:text-2xl font-bold text-muted-foreground mt-4">
           Your digital companion for mental clarity
         </p>
         <div className=" flex justify-center items-center mt-5 gap-4">
           <Link href={"/chat-bot"}>
-            <Button>Talk To MannMitra</Button>
+            <Button className={"text-2xl font-bold p-4"}>Talk To MannMitra</Button>
           </Link>
           <Link href={"/book-appointment"}>
-            <Button>Register As a Therapist</Button>
+            <Button className={"text-2xl font-bold p-4 text-white"} variant="outline" >Register As a Therapist</Button>
           </Link>
         </div>
       </section>
