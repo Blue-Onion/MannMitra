@@ -9,11 +9,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-import { faqs } from "@/data/landing"; // Assuming your FAQs JSON is imported here
+import { faqs } from "@/data/landing"; 
 
 export default function Home() {
   return (
-    <div className="dark p-5"> {/* Apply dark mode to the main div */}
+    <div className="dark p-5"> 
       <section className="mb-20">
         <div className="text-5xl lg:text-7xl md:text-6xl font-bold flex gap-2  items-center text-white text-center justify-center">
           <span className="text-[#10e0a5df] text-8xl mr-3">MannMitra is</span>
