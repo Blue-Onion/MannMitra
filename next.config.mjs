@@ -6,6 +6,14 @@ const nextConfig = {
         protocol: "https",
         hostname: "picsum.photos",
       },
+      {
+        protocol: "https",
+        hostname: "instagram.fdel18-1.fna.fbcdn.net",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.theinnerhour.com",
+      },
     ],
   },
 };
