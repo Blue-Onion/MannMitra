@@ -5,12 +5,15 @@ export const therapists = [
     specialization: "Clinical Psychologist",
     experience: "7 years",
     languages: ["English", "Hindi"],
-    location: "Delhi",
+
     image:
       "https://instagram.fdel18-1.fna.fbcdn.net/v/t51.2885-19/456079137_478783731711556_1460810785270465175_n.jpg?_nc_ht=instagram.fdel18-1.fna.fbcdn.net&_nc_cat=1&_nc_oc=Q6cZ2QEgFP0nmfqOg8n0W4rnozOH8qyf1K_y2XKtye2BrarfVprd80ipZeGryRbSlCGjFWw&_nc_ohc=3lqQmSyVnjIQ7kNvwFRbqIi&_nc_gid=3x9Sc-sjWS6TrWfhVVGqAQ&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfKBGM-f1es13kDMw8s815mj0xiLDBeFSzfRbD9BhNjklQ&oe=68242460&_nc_sid=7a9f4b",
     rating: 4.8,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Depression", "Anxiety", "Stress"],
+    sessionMode: {
+      online: ["chat", "call", "meeting"],
+      offline: ["Delhi"],
+    },
     fees: "₹1500 per session",
   },
   {
@@ -19,11 +22,14 @@ export const therapists = [
     specialization: "Counseling Psychologist",
     experience: "5 years",
     languages: ["English", "Hindi"],
-    location: "Mumbai",
-    image: "https://assets.theinnerhour.com/profilepics/cf/v3/Soumya_Jagatdeb.png",
+
+    image:
+      "https://assets.theinnerhour.com/profilepics/cf/v3/Soumya_Jagatdeb.png",
     rating: 4.5,
-    isVerified: true,
-    sessionMode: "online",
+    expertise: ["Relationship Issues", "Career Counseling"],
+    sessionMode: {
+      online: ["call", "meeting"],
+    },
     fees: "₹1200 per session",
   },
   {
@@ -32,11 +38,13 @@ export const therapists = [
     specialization: "Child Psychologist",
     experience: "6 years",
     languages: ["English", "Hindi"],
-    location: "Bangalore",
+
     image: "https://picsum.photos/seed/3/300/200",
     rating: 4.6,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Child Development", "Behavioral Issues"],
+    sessionMode: {
+      offline: ["Bangalore"],
+    },
     fees: "₹1300 per session",
   },
   {
@@ -45,11 +53,14 @@ export const therapists = [
     specialization: "Clinical Psychologist",
     experience: "8 years",
     languages: ["English", "Kannada"],
-    location: "Bangalore",
+
     image: "https://picsum.photos/seed/4/300/200",
     rating: 4.9,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Trauma", "OCD", "Anxiety"],
+    sessionMode: {
+      online: ["chat", "call", "meeting"],
+      offline: ["Bangalore"],
+    },
     fees: "₹1800 per session",
   },
   {
@@ -58,11 +69,13 @@ export const therapists = [
     specialization: "Relationship Counselor",
     experience: "4 years",
     languages: ["English", "Bengali"],
-    location: "Kolkata",
+
     image: "https://picsum.photos/seed/5/300/200",
     rating: 4.3,
-    isVerified: false,
-    sessionMode: "online",
+    expertise: ["Marital Issues", "Family Therapy"],
+    sessionMode: {
+      online: ["call"],
+    },
     fees: "₹1000 per session",
   },
   {
@@ -71,11 +84,13 @@ export const therapists = [
     specialization: "Psychiatrist",
     experience: "10 years",
     languages: ["English", "Marathi"],
-    location: "Pune",
+
     image: "https://picsum.photos/seed/6/300/200",
     rating: 4.7,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Schizophrenia", "Bipolar Disorder", "Medication Management"],
+    sessionMode: {
+      offline: ["Pune"],
+    },
     fees: "₹2000 per session",
   },
   {
@@ -84,11 +99,13 @@ export const therapists = [
     specialization: "Stress Management Specialist",
     experience: "3 years",
     languages: ["English", "Hindi"],
-    location: "Lucknow",
+
     image: "https://picsum.photos/seed/71/300/200",
     rating: 4.1,
-    isVerified: false,
-    sessionMode: "online",
+    expertise: ["Burnout", "Workplace Stress", "Mindfulness"],
+    sessionMode: {
+      online: ["chat", "meeting"],
+    },
     fees: "₹900 per session",
   },
   {
@@ -97,11 +114,14 @@ export const therapists = [
     specialization: "Cognitive Behavioral Therapist",
     experience: "6 years",
     languages: ["English", "Malayalam"],
-    location: "Kochi",
+
     image: "https://picsum.photos/seed/8/300/200",
     rating: 4.6,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Panic Disorder", "Social Anxiety", "Phobias"],
+    sessionMode: {
+      online: ["call"],
+      offline: ["Kochi"],
+    },
     fees: "₹1400 per session",
   },
   {
@@ -110,11 +130,13 @@ export const therapists = [
     specialization: "Psychiatrist",
     experience: "12 years",
     languages: ["English", "Telugu"],
-    location: "Hyderabad",
+
     image: "https://picsum.photos/seed/9/300/200",
     rating: 4.8,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Depression", "Anxiety Disorders", "Sleep Disorders"],
+    sessionMode: {
+      offline: ["Hyderabad"],
+    },
     fees: "₹2200 per session",
   },
   {
@@ -123,11 +145,13 @@ export const therapists = [
     specialization: "Grief Counselor",
     experience: "5 years",
     languages: ["English", "Marathi"],
-    location: "Pune",
+
     image: "https://picsum.photos/seed/10/300/200",
     rating: 4.4,
-    isVerified: false,
-    sessionMode: "online",
+    expertise: ["Loss and Bereavement", "Coping with Grief"],
+    sessionMode: {
+      online: ["chat", "call"],
+    },
     fees: "₹1100 per session",
   },
   {
@@ -136,11 +160,14 @@ export const therapists = [
     specialization: "Clinical Psychologist",
     experience: "9 years",
     languages: ["English", "Marathi"],
-    location: "Pune",
+
     image: "https://picsum.photos/seed/11/300/200",
     rating: 4.7,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Personality Disorders", "Trauma-informed Therapy"],
+    sessionMode: {
+      online: ["meeting"],
+      offline: ["Pune"],
+    },
     fees: "₹1900 per session",
   },
   {
@@ -149,11 +176,13 @@ export const therapists = [
     specialization: "Child Psychologist",
     experience: "7 years",
     languages: ["English", "Telugu"],
-    location: "Hyderabad",
+
     image: "https://picsum.photos/seed/12/300/200",
     rating: 4.5,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["ADHD", "Autism Spectrum Disorders"],
+    sessionMode: {
+      offline: ["Hyderabad"],
+    },
     fees: "₹1600 per session",
   },
   {
@@ -162,11 +191,14 @@ export const therapists = [
     specialization: "Couples Therapist",
     experience: "6 years",
     languages: ["English", "Hindi"],
-    location: "Delhi",
+
     image: "https://picsum.photos/seed/13/300/200",
     rating: 4.4,
-    isVerified: false,
-    sessionMode: "both",
+    expertise: ["Communication Issues", "Conflict Resolution"],
+    sessionMode: {
+      online: ["call", "meeting"],
+      offline: ["Delhi"],
+    },
     fees: "₹1500 per session",
   },
   {
@@ -175,11 +207,13 @@ export const therapists = [
     specialization: "Psychiatrist",
     experience: "11 years",
     languages: ["English", "Malayalam"],
-    location: "Kochi",
+
     image: "https://picsum.photos/seed/14/300/200",
     rating: 4.9,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Mood Disorders", "Anxiety Disorders", "Psychotic Disorders"],
+    sessionMode: {
+      offline: ["Kochi"],
+    },
     fees: "₹2100 per session",
   },
   {
@@ -188,11 +222,13 @@ export const therapists = [
     specialization: "Counseling Psychologist",
     experience: "4 years",
     languages: ["English", "Gujarati"],
-    location: "Ahmedabad",
+
     image: "https://picsum.photos/seed/15/300/200",
     rating: 4.2,
-    isVerified: false,
-    sessionMode: "online",
+    expertise: ["Self-esteem Issues", "Personal Growth"],
+    sessionMode: {
+      online: ["chat"],
+    },
     fees: "₹1000 per session",
   },
   {
@@ -201,11 +237,14 @@ export const therapists = [
     specialization: "Clinical Psychologist",
     experience: "10 years",
     languages: ["English", "Malayalam"],
-    location: "Trivandrum",
+
     image: "https://picsum.photos/seed/16/300/200",
     rating: 4.8,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Eating Disorders", "Body Image Issues"],
+    sessionMode: {
+      online: ["call", "meeting"],
+      offline: ["Trivandrum"],
+    },
     fees: "₹2000 per session",
   },
   {
@@ -214,11 +253,13 @@ export const therapists = [
     specialization: "Grief Counselor",
     experience: "5 years",
     languages: ["English", "Hindi"],
-    location: "Chandigarh",
+
     image: "https://picsum.photos/seed/17/300/200",
     rating: 4.3,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Sudden Loss", "Chronic Illness Grief"],
+    sessionMode: {
+      offline: ["Chandigarh"],
+    },
     fees: "₹1200 per session",
   },
   {
@@ -227,11 +268,13 @@ export const therapists = [
     specialization: "Stress Management Specialist",
     experience: "6 years",
     languages: ["English", "Hindi"],
-    location: "Jaipur",
+
     image: "https://picsum.photos/seed/18/300/200",
     rating: 4.5,
-    isVerified: false,
-    sessionMode: "online",
+    expertise: ["Time Management", "Relaxation Techniques"],
+    sessionMode: {
+      online: ["meeting"],
+    },
     fees: "₹1100 per session",
   },
   {
@@ -240,11 +283,14 @@ export const therapists = [
     specialization: "Cognitive Behavioral Therapist",
     experience: "8 years",
     languages: ["English", "Tamil"],
-    location: "Chennai",
+
     image: "https://picsum.photos/seed/19/300/200",
     rating: 4.7,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Cognitive Restructuring", "Behavioral Activation"],
+    sessionMode: {
+      online: ["chat", "call"],
+      offline: ["Chennai"],
+    },
     fees: "₹1700 per session",
   },
   {
@@ -253,11 +299,13 @@ export const therapists = [
     specialization: "Relationship Counselor",
     experience: "4 years",
     languages: ["English", "Urdu"],
-    location: "Lucknow",
+
     image: "https://picsum.photos/seed/20/300/200",
     rating: 4.2,
-    isVerified: false,
-    sessionMode: "online",
+    expertise: ["Pre-marital Counseling", "Divorce Counseling"],
+    sessionMode: {
+      online: ["call", "meeting"],
+    },
     fees: "₹1000 per session",
   },
   {
@@ -266,11 +314,13 @@ export const therapists = [
     specialization: "Couples Therapist",
     experience: "7 years",
     languages: ["English", "Tamil"],
-    location: "Chennai",
+
     image: "https://picsum.photos/seed/21/300/200",
     rating: 4.6,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Infidelity", "Intimacy Issues"],
+    sessionMode: {
+      offline: ["Chennai"],
+    },
     fees: "₹1600 per session",
   },
   {
@@ -279,11 +329,14 @@ export const therapists = [
     specialization: "Child Psychologist",
     experience: "6 years",
     languages: ["English", "Gujarati"],
-    location: "Ahmedabad",
+
     image: "https://picsum.photos/seed/22/300/200",
     rating: 4.5,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Learning Disabilities", "Social Skills Development"],
+    sessionMode: {
+      online: ["meeting"],
+      offline: ["Ahmedabad"],
+    },
     fees: "₹1500 per session",
   },
   {
@@ -292,11 +345,13 @@ export const therapists = [
     specialization: "Psychiatrist",
     experience: "12 years",
     languages: ["English", "Hindi"],
-    location: "Delhi",
+
     image: "https://picsum.photos/seed/23/300/200",
     rating: 4.9,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Severe Mental Illness", "Treatment Planning"],
+    sessionMode: {
+      offline: ["Delhi"],
+    },
     fees: "₹2200 per session",
   },
   {
@@ -305,11 +360,13 @@ export const therapists = [
     specialization: "Stress Management Specialist",
     experience: "3 years",
     languages: ["English", "Hindi"],
-    location: "Bhopal",
+
     image: "https://picsum.photos/seed/24/300/200",
     rating: 4.1,
-    isVerified: false,
-    sessionMode: "online",
+    expertise: ["Meditation", "Breathing Exercises"],
+    sessionMode: {
+      online: ["chat", "call", "meeting"],
+    },
     fees: "₹900 per session",
   },
   {
@@ -318,11 +375,14 @@ export const therapists = [
     specialization: "Counseling Psychologist",
     experience: "5 years",
     languages: ["English", "Hindi"],
-    location: "Indore",
+
     image: "https://picsum.photos/seed/25/300/200",
     rating: 4.4,
-    isVerified: true,
-    sessionMode: "both",
+    expertise: ["Adjustment Issues", "Life Transitions"],
+    sessionMode: {
+      online: ["call"],
+      offline: ["Indore"],
+    },
     fees: "₹1400 per session",
   },
   {
@@ -331,63 +391,13 @@ export const therapists = [
     specialization: "Clinical Psychologist",
     experience: "9 years",
     languages: ["English", "Urdu"],
-    location: "Lucknow",
+
     image: "https://picsum.photos/seed/26/300/200",
     rating: 4.8,
-    isVerified: true,
-    sessionMode: "offline",
+    expertise: ["Dissociative Disorders", "Somatic Symptom Disorders"],
+    sessionMode: {
+      offline: ["Lucknow"],
+    },
     fees: "₹1900 per session",
-  },
-  {
-    id: 27,
-    name: "Ms. Rachna Jain",
-    specialization: "Grief Counselor",
-    experience: "5 years",
-    languages: ["English", "Hindi"],
-    location: "Delhi",
-    image: "https://picsum.photos/seed/27/300/200",
-    rating: 4.3,
-    isVerified: false,
-    sessionMode: "online",
-    fees: "₹1200 per session",
-  },
-  {
-    id: 28,
-    name: "Mr. Devendra Shetty",
-    specialization: "Cognitive Behavioral Therapist",
-    experience: "7 years",
-    languages: ["English", "Kannada"],
-    location: "Bangalore",
-    image: "https://picsum.photos/seed/28/300/200",
-    rating: 4.6,
-    isVerified: true,
-    sessionMode: "both",
-    fees: "₹1600 per session",
-  },
-  {
-    id: 29,
-    name: "Dr. Sunita Reddy",
-    specialization: "Psychiatrist",
-    experience: "13 years",
-    languages: ["English", "Telugu"],
-    location: "Hyderabad",
-    image: "https://picsum.photos/seed/29/300/200",
-    rating: 4.9,
-    isVerified: true,
-    sessionMode: "offline",
-    fees: "₹2300 per session",
-  },
-  {
-    id: 30,
-    name: "Ms. Meenakshi Das",
-    specialization: "Relationship Counselor",
-    experience: "4 years",
-    languages: ["English", "Bengali"],
-    location: "Kolkata",
-    image: "https://picsum.photos/seed/30/300/200",
-    rating: 4.2,
-    isVerified: false,
-    sessionMode: "online",
-    fees: "₹1000 per session",
   },
 ];
