@@ -16,45 +16,36 @@ const Navbar = () => {
       <nav className="flex justify-between items-center text-white p-7">
         <Link href={"/"}>
           <div className="text-3xl flex  font-bold">
-            <span className="text-[#66a1ff]">
-
-            Mann
-            </span>
-            <span className="text-[#10e0a5df]">
-
-            Mitra
-            </span>
+            <span className="text-[#66a1ff]">Mann</span>
+            <span className="text-[#10e0a5df]">Mitra</span>
           </div>
         </Link>
         <div className="">
           <SignedOut>
             <SignInButton>
-              
-              <Button>
-                Login
-              </Button>
+              <Button>Login</Button>
             </SignInButton>
           </SignedOut>
           <SignedIn>
             <div className="flex items-center gap-3">
-                <Link href={"/chat-bot"}>
-              <Button>
-                <MessageSquare className="h-4 w-4 mr-2" />
-                Talk To MannMitra
-              </Button>
-                </Link>
-                <Link href={"/appoinments"}>
-              <Button>
-                <Calendar className="h-4 w-4 mr-2" />
-                Appointment
-              </Button>
-                </Link>
-                <Link href={"new-appointment"}>
-              <Button>
-                <PenBox className="h-4 w-4 mr-2" />
-                Book An Appointment
-              </Button>
-                </Link>
+              <Link href={"/chat-bot"}>
+                <Button>
+                  <MessageSquare className="h-4 w-4 mr-2" />
+                  Talk To MannMitra
+                </Button>
+              </Link>
+              <Link href={"/appoinments"}>
+                <Button>
+                  <Calendar className="h-4 w-4 mr-2" />
+                  Appointment
+                </Button>
+              </Link>
+              <Link href={"new-appointment"}>
+                <Button>
+                  <PenBox className="h-4 w-4 mr-2" />
+                  Book An Appointment
+                </Button>
+              </Link>
               <UserButton />
             </div>
           </SignedIn>

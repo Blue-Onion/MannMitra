@@ -31,10 +31,10 @@ function TherapistCard({ therapist }) {
                   {therapist.specialization}
                 </p>
                 <p className="text-sm text-gray-500">
-                  {therapist.experience} experience
+                  {therapist.experience} years experience 
                 </p>
                 <p className="text-sm text-gray-500">
-                  Fees: <span className="font-bold text-white">{therapist.fees}</span>
+                  Fees: <span className="font-bold text-white">${therapist.fees} per session</span>
                 </p>
                 <p className="text-sm text-gray-500 flex gap-2">
                   Expertise: <span className="flex gap-3">
